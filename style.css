@@ -6,7 +6,7 @@
 }
 
 div > div > section:first-child > div {
-  height:100%;      background:url("https://raw.githubusercontent.com/jieun8399/portfolio/4cfc6b79be456f3af8d861855db77817df70103c/img/main02.png") center 30%;
+  height:100%;      background:url("img/main02.png") center 30%;
   background-size:cover;
   
   position:relative;
@@ -33,6 +33,7 @@ div > div > section:first-child > div {
   .profile {
     width:100%;
   }
+}
   
   div > div > section:nth-child(3) > div {
     
