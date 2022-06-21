@@ -2,11 +2,10 @@
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:10rem;
 }
 
 div > div > section:first-child > div {
-  height:100%;      background:url("img/main02.png") center 30%;
+  height:100%;      background:url("https://raw.githubusercontent.com/jieun8399/portfolio/4cfc6b79be456f3af8d861855db77817df70103c/img/main02.png") center 30%;
   background-size:cover;
   
   position:relative;
@@ -30,14 +29,11 @@ div > div > section:first-child > div {
   50% {
     margin-top:30px;
   }
+}
   .profile {
     width:100%;
   }
-}
   
-  div > div > section:nth-child(3) > div {
-    
-  }
   
   /* 스크롤바 꾸미기 시작 */
 :root {
@@ -118,9 +114,6 @@ body {
   width:1920px;
 }
 
-* {
-}
-
 .section-1 {
   width:100vw;
   height:100vh;
@@ -129,19 +122,34 @@ body {
   justify-content:center;
 }
 
-.box-1 {
-  width:0;
-  height:115px;
-  overflow:hidden;
-}
+
+
+
+
+
+
+
+
+
+
+/* 수정이 된 부분 */
+
+
 
 .box-1 > div {
   width:500px;
-  height:500px;
+  height:410px;
+}
+
+.box-1__txt-1 {
+  text-align: right;
 }
 
 .box-1__txt-1 > div {
-  text-align:right;
+  width:0;
+  overflow: hidden;
+  white-space: nowrap;
+  display:inline-block;
 }
 
 .box-1__txt-1 > div:first-child {
@@ -152,11 +160,36 @@ body {
   letter-spacing:.95rem;
 }
 
-.aos-animate .box-1 {
-  width:500px;
-  height:500px;
-  transition:width .6s 1s, height .6s 1.6s;
+.fp-viewing-2 .box-1__txt-1 > div {
+  animation-name:width;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
+
+@keyframes width {
+  100% {
+    width:500px;
+  }
+}
+
+
+.fp-viewing-2 .box-1__txt-box {
+  height:0;
+  overflow:hidden;
+  animation-name:height;
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay:1s;
+}
+
+@keyframes height {
+  100% {
+    height:calc(100% - 100px);
+  }
+}
+
 
 .box-1__line-1 {
   margin-top:10px;
@@ -177,12 +210,29 @@ body {
 
 .box-1__txt-2 > div {
   width:350px;
+  position:absolute;
 }
 
-.aos-animate .box-1__txt-2 {
-  width:350px;
+.fp-viewing-2 .box-1__txt-2 {
+  width:0;
+  height:130px;
   transition:width .6s 2.2s;
+  position:relative;
+  animation-name:width2;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay:1.7s;
 }
+
+@keyframes width2 {
+  100% {
+    width:350px;
+  }
+}
+
+
+
 
   /*   슬라이드 사이즈는 여기서 수정해 주시면 됩니다 ! */
 .section-1 .slide-box-1 > .swiper {
@@ -196,7 +246,17 @@ body {
   opacity:0;
 }
 
-.aos-animate .slide-box-1 {
-  opacity:1;
-  transition:opacity 0.3s 3s;
+.fp-viewing-2 .slide-box-1 {
+  opacity:0;
+  animation-name:opacity;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay:2.5s;
+}
+
+@keyframes opacity {
+  100% {
+    opacity:1;
+  }
 }
