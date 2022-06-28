@@ -1,5 +1,5 @@
 new fullpage('#fullpage', {
-  sectionsColor: ['yellow', 'whithe', '#C0C0C0', '#ADD8E6'],
+  sectionsColor: ['yellow', 'white', 'white', 'white'],
   continuousVertical:true,
   navigation:true,
   navigationPosition: 'left',

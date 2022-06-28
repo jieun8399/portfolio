@@ -236,8 +236,8 @@ body {
 
   /*   슬라이드 사이즈는 여기서 수정해 주시면 됩니다 ! */
 .section-1 .slide-box-1 > .swiper {
-  width: 600px;
-  height: 500px;
+  width: 800px;
+  height: 600px;
   margin:0;
   margin-right:40px; 
 }
