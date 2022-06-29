@@ -72,8 +72,7 @@ body {
 }
 
 .section-1 {
-  background-color:#DF8D04;
-  color:white;
+  color:#2C3639;
   height:2000px;
   position:relative;
 }
@@ -259,4 +258,17 @@ body {
   100% {
     opacity:1;
   }
+}
+
+.section-4 {
+  height: 400px;
+  color: #2C3639;
+  text-align: center;
+}
+
+.foot_1 {
+  font-size: 4rem;
+}
+.foot_2 {
+  font-size: 2rem;
 }
