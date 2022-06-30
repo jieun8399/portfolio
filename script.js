@@ -12,7 +12,6 @@ AOS.init();
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  direction: 'vertical',
   loop: true,
 
   // If we need pagination
