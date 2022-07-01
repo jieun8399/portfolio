@@ -38,6 +38,7 @@ div > div > section:first-child > div {
   /* 스크롤바 꾸미기 시작 */
 :root {
   overflow-y:overlay;
+  --swiper-theme-color:#E4DCCF;
 }
 
 ::-webkit-scrollbar-thumb {

@@ -1,6 +1,5 @@
 new fullpage('#fullpage', {
   sectionsColor: ['white', 'white', '#F0EBE3', '#839AA8'],
-  continuousVertical:true,
   navigation:true,
   navigationPosition: 'left',
   showActiveTooltip:true,
@@ -26,7 +25,5 @@ const swiper = new Swiper('.swiper', {
   },
 
   // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+  
 });
