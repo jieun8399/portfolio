@@ -34,7 +34,7 @@
 div > div > section:nth-child(2) > div {
     height:auto;
     width: 100%;
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url("https://github.com/jieun8399/portfolio1/blob/master/img/notebook.jpg?raw=true") center 30%;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url("https://github.com/jieun8399/portfolio/blob/master/img/notebook.jpg?raw=true") center 30%;
     background-size:cover;
     
     position:relative;
@@ -42,7 +42,7 @@ div > div > section:nth-child(2) > div {
 div > div > section:first-child > div {
   height:auto;
   width: 100%;
-  background: url("https://github.com/jieun8399/portfolio1/blob/master/img/main04.png?raw=true") center 30%;
+  background: url("https://github.com/jieun8399/portfolio/blob/master/img/main04.png?raw=true") center 30%;
   background-size:cover;
   
   position:relative;
