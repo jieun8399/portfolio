@@ -1,0 +1,446 @@
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+
+.nanumbrushscript * {
+ font-family: 'Nanum Brush Script', cursive;
+}
+@font-face {
+  font-family: 'Hana_handwriting';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_05@1.0/Hana_handwriting.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KimjungchulScript-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulScript-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+#fullpage > .section > div {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+  
+div > div > section:nth-child(2) > div {
+    height:auto;
+    width: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url("https://github.com/jieun8399/portfolio1/blob/master/img/notebook.jpg?raw=true") center 30%;
+    background-size:cover;
+    
+    position:relative;
+}
+div > div > section:first-child > div {
+  height:auto;
+  width: 100%;
+  background: url("https://github.com/jieun8399/portfolio1/blob/master/img/main04.png?raw=true") center 30%;
+  background-size:cover;
+  
+  position:relative;
+}
+
+  
+
+body, ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'GmarketSansMedium';
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.flex {
+    display: flex;
+}
+
+.site-wrap {
+    max-width: 100%;
+    height: auto;
+}
+.main_img {
+    width: 100%;
+    height: 100%;
+}
+.main_img2 {
+    display: none;
+}
+.main_txt {
+    position: absolute;
+    text-align: center;
+    font-size: 5vw;
+    color: #263159;
+    border: 3px solid #263159;
+    font-family: 'Hana_handwriting';
+    width: 30vw;
+    height: auto;
+    left: 35%;
+    top:50%;
+}
+.main_txt > p:last-child {
+    color: #434242;
+    font-family: 'GmarketSansMedium';
+    font-size: 3.5vw;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+}
+
+@media (max-width: 800px) {
+    .main {
+      width:100%;
+      height: auto;
+    }
+    .main_img {
+        height: 100%;
+        width:auto
+    }
+  
+    .main_txt {
+        width:75vw;
+        height: auto;
+        left:15%;
+        font-size: 40px;
+    }
+    .main_txt > p:last-child {
+        font-size: 35px;
+    }
+    .whale {
+        top:15%;
+        left:0%;
+        height: auto;
+        width:100%;
+    }
+
+  }
+
+
+/* 고래 커스텀 */
+.whale {
+    position:absolute;
+    top:15%;
+    left:40%;
+    animation: fly 2.5s linear infinite;
+}
+
+.whale > img {
+    height: auto;
+    width: 20vw;
+}
+
+
+  @keyframes fly {
+    
+    /* 50% 일 때에는 margin-top이 30px이어야 한다! */
+    50% {
+      margin-top:30px;
+    }
+  }
+  
+/* 프로필   */
+.content{
+    width:90vw;
+    height: auto;
+    height:auto;
+}
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.item{
+    min-height: 200px;
+    flex-basis: 150px;
+    flex-grow: 1;
+}
+.item{
+    min-height: 150px;
+    flex-basis: 23.5%;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+.item1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3vw;
+}
+.item2 {
+    max-height:200vw;
+    line-height: 1.8;
+}
+.nbsp {
+    margin-bottom: 10px;
+}
+.girl {
+    max-width: 600px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    border-radius: 15PX;
+}
+.port_txt{
+    color:#fff;
+    margin-top: 10px;
+    font-size: 1.5vw;
+    background-color:rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
+    border-radius: 15px;
+}
+.port_txt2{
+    color: #fff;
+    margin-top: 10px;
+    font-size: 1.3vw;
+    background-color:rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding-left: 5vw;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+}
+.port_txt2 > P {
+    font-size: 1.5vw;
+}
+.port_txt2 > span {
+    margin-bottom: 5vw;
+}
+
+.port_txt > span:first-child {
+  font-family: 'Hana_handwriting';
+}
+.using {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.program1 {
+    width: calc(100% / 2 - 10px);
+}
+.program2 {
+    width: calc(100% / 2 - 10px);
+}
+@media screen and (max-width:1023px){
+    .item{
+        flex-basis: 100%;
+    }
+}
+@media screen and (max-width:800px){
+    .item{
+        flex-basis: 100%;
+    }
+    .girl {
+        width:150px;
+        border-radius: 15px;;
+    }
+    .port_txt >span:first-child {
+        font-size: 5vw; 
+    }
+    .port_txt2 > p {
+        font-size: 4vw;
+    }
+    .nbsp {
+        margin-bottom: 5px;
+    }
+    .item2 {
+        line-height: 1.3;
+    }
+    .box-1 > div {
+        flex-basis: 100%;
+    }
+    .section-1 .slide-box-1 > .swiper {
+        flex-basis: 100%;
+    }
+    .swiper-button-next {
+         margin-right: -10px;
+    }
+    .swiper-button-prev {
+      margin-left: -10px;
+ }
+    .swiper-slide {
+      height: 100%;
+    }
+    .swiper_00 {
+      width: 100%;
+    }
+    .swiper-wrapper {
+      width:100%;
+    }
+    .item3 {
+      width:100%;
+    }
+    .fp-viewing-2 .box-1__txt-1 > div {
+      animation-name:width;
+      animation-timing-function: none;
+      animation-duration: 0;
+      animation-fill-mode: none;
+    }
+    @keyframes width {
+      100% {
+        width:400%;
+      }
+    }
+    .box-1__txt-1  {
+      width: 100%;
+    }
+    .box-1__txt-1 > div {
+      width:85vw !important;
+    }
+}
+
+.content2{
+  max-width: 100%;
+  margin: 0 auto;
+  height:auto;
+}
+.flexbox2{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  width: 90vw;
+  height: auto;
+}
+/* 슬라이드 */
+
+.swiper {
+  max-width: 100vw;
+  height: auto;
+  margin-left:auto;
+  margin-right:auto;
+}
+.swiper-wrapper{
+  max-width: 100vw;
+  height: auto;
+}
+.item3 {
+  width: 60vw;
+  height: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 1vw;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* 스와이퍼 밑에 버튼 */
+
+.swiper-pagination {
+  z-index: 1;
+  width: auto!important;
+  margin-left: 25vw;
+}
+
+.swiper-pagination-bullet {
+	border-radius: 0;
+	width: 8px;
+  height: 8px;
+  border-radius: 50%;
+	line-height: 30px;
+	font-size: 1vw;
+	opacity: 1;
+	background: rgba(255, 185, 0,0.3);
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.swiper-pagination-bullet-active {
+	background: #FFB200;
+  width: 3vw;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* 슬라이드 옆 박스 */
+.dungdung {width:200px;height:150px;}
+#dung{position:absolute; top:150px;
+   left:300px;
+ animation:ani 1s infinite alternate;  
+   }
+@keyframes ani{
+   0%{transform:translate(0,0);}
+   100%{transform:translate(0,50px);}
+}  
+ 
+.box-1 > div {
+  width:auto;
+  height:auto;
+}
+.box-1__txt-1 {
+  text-align: right;
+}
+.box-1__txt-1 > div {
+  width:0;
+  overflow: hidden;
+  white-space: nowrap;
+  display:inline-block;
+}
+.box-1__txt-1 > div:first-child {
+  font-size:2vw;
+}
+.box-1__txt-1 > div:last-child {
+  letter-spacing:.95rem;
+}
+.fp-viewing-2 .box-1__txt-1 > div {
+  animation-name:width;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes width {
+  100% {
+    width:27vw;
+  }
+}
+
+/* 푸터 */
+.section-4 {
+  height: auto;
+  color: #2C3639;
+  text-align: center;
+}
+
+.foot_1 {
+  font-size: 5vw;
+}
+.foot_2 {
+  font-size: 4.5vw;
+}
